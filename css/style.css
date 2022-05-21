@@ -26,6 +26,8 @@
   }
 
   #column1 {
+    display: flex;
+    flex-direction: row;
     order: 1;
     margin: 10px;
     color: red;
@@ -36,6 +38,8 @@
   }
 
   #column2 {
+    display: flex;
+    flex-direction: row;
     order: 2;
     margin: 10px;
     color: red;
@@ -46,6 +50,8 @@
   }
 
   #column3 {
+    display: flex;
+    flex-direction: row;
     order: 3;
     margin: 10px;
     color: red;
