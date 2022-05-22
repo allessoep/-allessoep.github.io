@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width : 1000px) {
+  body {
+    overflow-x: hidden;
+    padding: 5px;
+  }
+
+  #header {}
+
+  #headercontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-style: solid;
+    width: 50vw;
+    max-width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: white;
+  }
+
+  #columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    margin-left: 5px;
+    margin-right: 5px;
+
+  }
+
+  #column1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    order: 1;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30vh;
+    color: red;
+    vertical-align: middle;
+    border-style: solid;
+  }
+
+  #column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    order: 2;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30vh;
+    color: blue;
+    vertical-align: middle;
+    border-style: solid;
+  }
+
+  #column3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    order: 3;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30vh;
+    color: green;
+    border-style: solid;
+  }
+
+  #column4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    order: 4;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30vh;
+    color: orange;
+    border-style: solid;
+  }
+
+  #column5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    order: 5;
+    width: 100%;
+    height: 30vh;
+    color: purple;
+    border-style: solid;
+  }
+
+  #footer {}
+
+  #footercontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    max-width: 100%;
+    height: 10vh;
+    border-style: solid;
+    border-color: black;
+  }
+}
+
+@media only screen and (min-width : 1001px) {
+  body {
+    overflow-x: hidden;
+    padding: 10px;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #headercontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 10px;
+    border-style: solid;
+    width: 50vw;
+    max-width: 100%;
+    height: 7vh;
+  }
+
+  #columns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #column1 {
+    order: 1;
+    margin: 10px;
+    color: red;
+    border-style: solid;
+    width: 20%;
+    height: 75vh;
+    overflow-y: scroll;
+    text-align: center;
+    /* hide scrollbar */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  #column2 {
+    order: 2;
+    margin: 10px;
+    color: blue;
+    border-style: solid;
+    width: 20%;
+    height: 75vh;
+    overflow-y: scroll;
+    text-align: center;
+    /* hide scrollbar */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  #column3 {
+    order: 3;
+    margin: 10px;
+    color: green;
+    border-style: solid;
+    width: 20%;
+    height: 75vh;
+    overflow-y: scroll;
+    text-align: center;
+    /* hide scrollbar */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  #column4 {
+    order: 4;
+    margin: 10px;
+    color: orange;
+    border-style: solid;
+    width: 20%;
+    height: 75vh;
+    overflow-y: scroll;
+    text-align: center;
+    /* hide scrollbar */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  #column5 {
+    order: 5;
+    margin: 10px;
+    color: purple;
+    border-style: solid;
+    width: 20%;
+    height: 75vh;
+    overflow-y: scroll;
+    text-align: center;
+    /* hide scrollbar */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  /* hide scrollbar */
+  #column1::-webkit-scrollbar {
+    display: none;
+  }
+
+  #column2::-webkit-scrollbar {
+    display: none;
+  }
+
+  #column3::-webkit-scrollbar {
+    display: none;
+  }
+
+  #column4::-webkit-scrollbar {
+    display: none;
+  }
+
+  #column5::-webkit-scrollbar {
+    display: none;
+  }
+
+  #footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  #footercontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 10px;
+    border-style: solid;
+    width: 50vw;
+    max-width: 100%;
+    height: 7vh;
+  }
+}
+
+#columns p {
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
