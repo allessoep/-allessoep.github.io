@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* mobile version */
+@media only screen and (max-width : 1000px) {
+  #topbarcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-bottom: solid;
+    padding-bottom: 5px;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    background-color: white;
+    font-size: 0.95em;
+  }
+
+  #maincontent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    padding-top: 3vh;
+  }
+
+  #block1 {
+    width: 40vw;
+    height: 20vh;
+    border: solid;
+    border-color: blue;
+    overflow-wrap: break-word;
+    margin: 2vw;
+    padding: 2px;
+  }
+
+  #headerblock {
+    width: 86vw;
+    height: 20vh;
+    border: solid;
+    border-color: red;
+    overflow-wrap: break-word;
+    margin: 2vw;
+    padding: 2px;
+  }
+
+  #footerblock {
+    width: 86vw;
+    height: 20vh;
+    border: solid;
+    border-color: red;
+    overflow-wrap: break-word;
+    margin: 2vw;
+    padding: 2px;
+  }
+}
+
+/* desktop version */
+@media only screen and (min-width : 1001px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #topbarcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-bottom: solid;
+    padding: 8px;
+    padding-bottom: 6px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    font-size: 0.95em;
+  }
+
+  #sidebarcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-right: solid;
+    border-bottom: solid;
+    padding-bottom: 5px;
+    width: 16vw;
+    height: 100vh;
+    font-size: 0.95em;
+    position: fixed;
+    background-color: white;
+  }
+
+  #maincontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 2vh;
+  }
+
+  #block1 {
+    border: solid;
+    width: 15vw;
+    height: 15vh;
+    border-color: blue;
+    overflow-wrap: break-word;
+    padding: 2px;
+    margin: .5vw;
+  }
+
+  #headerblock {
+    border: solid;
+    width: 31.5vw;
+    height: 15vh;
+    border-color: red;
+    overflow-wrap: break-word;
+    margin: .5vw;
+    padding: 2px;
+  }
+
+  #footerblock {
+    border: solid;
+    width: 48vw;
+    height: 15vh;
+    border-color: red;
+    overflow-wrap: break-word;
+    margin: .5vw;
+    padding: 2px;
+  }
+}
