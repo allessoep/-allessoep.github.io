@@ -6,31 +6,13 @@
 
 /* mobile version */
 @media only screen and (max-width : 1000px) {
-  #filterbarcontent {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    border-bottom: solid;
-    padding: 2px;
-    padding-left: 10px;
-    padding-bottom: 7px;
-    padding-top: 7.5vh;
-    width: 100%;
-    max-width: 100%;
-    position: fixed;
-    background-color: white;
-    font-size: 1.3em;
-  }
-
   #topbarcontent {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: black;
-    border-bottom: solid;
     padding: 2px;
-    padding-left: 10px;
+    padding-left: 4vw;
     padding-bottom: 6px;
     width: 100%;
     max-width: 100%;
@@ -39,12 +21,63 @@
     font-size: 1.3em;
   }
 
+  #filterbarcontent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: black;
+    border-bottom: solid;
+    padding: 2px;
+    padding-left: 4vw;
+    padding-bottom: 5px;
+    padding-top: 6vh;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    background-color: white;
+    font-size: 1.3em;
+  }
+
+  #sidebar {}
+
+  #sidebarcontent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40vh;
+    height: 60vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: black;
+    border-top: solid;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    position: fixed;
+    background-color: white;
+    overflow: scroll;
+  }
+
+  #sidebartitel {
+    color: red;
+    font-size: 2.5em;
+    padding-bottom: 2vh;
+    padding: 1vw;
+    padding-top: 1vh;
+    text-align: left;
+  }
+
+  #sidebartekst {
+    color: red;
+    font-size: 1.4em;
+    padding: 1vw;
+    overflow-y: scroll;
+  }
+
   #maincontent {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
     justify-content: center;
-    padding-top: 10vh;
+    padding-top: 15vh;
   }
 
   #block1 {
@@ -79,12 +112,50 @@
 
   #artimage {
     width: 40vw;
-    height: 17vh;
+    height: 20vh;
     object-fit: cover;
   }
 
+  #sidebarimage {
+    padding-left: 7vw;
+    padding-top: 20px;
+    width: 70vw;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  #logoimage {
+    width: 9vh;
+  }
+
+  #lightbutton {
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: blue;
+    font-size: 1.6em;
+    text-decoration: underline;
+  }
+
+  #artbutton {
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: red;
+    font-size: 1.6em;
+    text-decoration: underline;
+  }
+
+  #naturebutton {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: green;
+    font-size: 1.6em;
+    text-decoration: underline;
+  }
+
   #maincontent p {
-    visibility: visible;
+    visibility: hidden;
   }
 }
 
@@ -109,13 +180,13 @@
 
   #topbarcontent {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
     color: black;
     padding: 6px;
-    padding-left: 63vw;
+    padding-left: 93vw;
     /* moving title */
-    padding-bottom: 6px;
+    padding-top: 10px;
     position: fixed;
     font-size: 1.5em;
   }
@@ -130,25 +201,42 @@
     padding: 6px;
     padding-left: 32vw;
     /* moving title */
-    padding-bottom: 6px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     position: fixed;
     background-color: white;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   #sidebarcontent {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    align-items: flex-start;
     color: black;
     border-right: solid;
     border-bottom: solid;
-    padding-bottom: 5px;
+    padding-left: 2vw;
+    padding-left: 1vw;
     width: 27vw;
     height: 100vh;
-    font-size: 1.5em;
     position: fixed;
     background-color: white;
+  }
+
+  #sidebartitel {
+    color: red;
+    font-size: 3em;
+    padding-bottom: 2vh;
+    padding: 1vw;
+    padding-top: 1vh;
+  }
+
+  #sidebartekst {
+    color: red;
+    font-size: 1.2em;
+    padding: 1vw;
   }
 
   #maincontent {
@@ -156,7 +244,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: flex-end;
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-left: 35vh;
     padding-right: 5vh;
     padding-bottom: 2vh;
@@ -198,6 +286,38 @@
     object-fit: cover;
   }
 
+  #logoimage {
+    width: 9vh;
+  }
+
+  #sidebarimage {
+    padding-top: 20px;
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  #lightbutton {
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: blue;
+  }
+
+  #artbutton {
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: red;
+  }
+
+  #naturebutton {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: green;
+  }
+
+  /*removing titel*/
   #maincontent p {
     visibility: hidden;
   }
