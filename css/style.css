@@ -6,35 +6,17 @@
 
 /* mobile version */
 @media only screen and (max-width : 1000px) {
-  #topbarcontent {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: black;
-    padding: 2px;
-    padding-left: 4vw;
-    padding-bottom: 6px;
-    width: 100%;
-    max-width: 100%;
-    position: fixed;
-    background-color: white;
-    font-size: 1.3em;
-  }
-
   #filterbarcontent {
+    background-color: #87a4b6;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20vw;
     color: black;
-    border-bottom: solid;
-    padding: 2px;
-    padding-left: 4vw;
-    padding-bottom: 5px;
-    padding-top: 6vh;
-    width: 100%;
-    max-width: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 100vw;
     position: fixed;
-    background-color: white;
     font-size: 1.3em;
   }
 
@@ -43,34 +25,38 @@
   #sidebarcontent {
     display: flex;
     flex-direction: column;
-    margin-top: 40vh;
-    height: 100vh;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color: black;
     border-top: solid;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    margin-top: 40vh;
+    padding: 5px;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    color: black;
     position: fixed;
     background-color: white;
     overflow-y: scroll;
     overflow-x: hidden;
+    visibility: visible;
   }
 
   #sidebartitel {
-    color: red;
     font-size: 2.5em;
     padding-bottom: 2vh;
     padding: 1vw;
     padding-top: 1vh;
-    text-align: left;
   }
 
   #sidebartekst {
-    color: red;
     font-size: 1.4em;
     padding: 1vw;
     overflow-y: scroll;
+  }
+
+  #sidebarimages {
+    font-size: 1.4em;
+    padding: 1vw;
+    overflow-y: scroll;
+    padding-left: 5vw;
   }
 
   #maincontent {
@@ -78,14 +64,13 @@
     flex-wrap: wrap;
     align-content: flex-end;
     justify-content: center;
-    padding-top: 15vh;
+    padding-top: 8vh;
+    background-color: #607582
   }
 
   #block1 {
     width: 40vw;
     height: 20vh;
-    border: solid;
-    border-color: blue;
     overflow-wrap: break-word;
     margin: 2vw;
     padding: 2px;
@@ -94,8 +79,6 @@
   #headerblock {
     width: 40vw;
     height: 20vh;
-    border: solid;
-    border-color: red;
     overflow-wrap: break-word;
     margin: 2vw;
     padding: 2px;
@@ -104,8 +87,6 @@
   #footerblock {
     width: 40vw;
     height: 20vh;
-    border: solid;
-    border-color: red;
     overflow-wrap: break-word;
     margin: 2vw;
     padding: 2px;
@@ -118,41 +99,38 @@
   }
 
   #sidebarimage {
-    padding-left: 7vw;
-    padding-top: 20px;
-    width: 70vw;
-    height: 80vh;
+      padding-top: 20px;
+    width: 85vw;
     object-fit: cover;
   }
 
   #logoimage {
-    width: 9vh;
+    width: 5vh;
+    visibility: hidden;
   }
 
   #lightbutton {
     margin-right: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    color: blue;
     font-size: 1.6em;
-    text-decoration: underline;
   }
 
   #artbutton {
     margin-right: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    color: red;
     font-size: 1.6em;
-    text-decoration: underline;
   }
 
   #naturebutton {
     padding-left: 5px;
     padding-right: 5px;
-    color: green;
     font-size: 1.6em;
-    text-decoration: underline;
+  }
+
+  #contact {
+    visibility: hidden;
   }
 
   #maincontent p {
@@ -179,33 +157,18 @@
     flex-direction: column;
   }
 
-  #topbarcontent {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color: black;
-    padding: 6px;
-    padding-left: 93vw;
-    /* moving title */
-    padding-top: 10px;
-    position: fixed;
-    font-size: 1.5em;
-  }
-
   #filterbarcontent {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    border-bottom: solid;
     width: 100%;
     color: black;
     padding: 6px;
     padding-left: 32vw;
+    padding-right: 20px;
     /* moving title */
-    padding-bottom: 10px;
-    padding-top: 10px;
     position: fixed;
-    background-color: white;
+    background-color: #87a4b6;
     font-size: 2em;
   }
 
@@ -216,26 +179,31 @@
     overflow-y: scroll;
     align-items: flex-start;
     color: black;
-    border-right: solid;
-    border-bottom: solid;
     padding-left: 2vw;
     padding-left: 1vw;
     width: 27vw;
     height: 100vh;
     position: fixed;
-    background-color: white;
+    background-color: #f9f9f9;
+  }
+
+  #benenbeelden {
+    visibility: visible;
   }
 
   #sidebartitel {
-    color: red;
     font-size: 3em;
     padding-bottom: 2vh;
     padding: 1vw;
-    padding-top: 1vh;
+    padding-top: 2vh;
   }
 
   #sidebartekst {
-    color: red;
+    font-size: 1.2em;
+    padding: 1vw;
+  }
+
+  #sidebarimages {
     font-size: 1.2em;
     padding: 1vw;
   }
@@ -245,77 +213,79 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: flex-end;
-    padding-top: 10vh;
-    padding-left: 35vh;
+    padding-top: 12vh;
+    padding-left: 50vh;
     padding-right: 5vh;
     padding-bottom: 2vh;
+    background-color: #607582
   }
 
   #block1 {
-    border: solid;
-    width: 15vw;
-    height: 20vh;
-    border-color: blue;
+    width: 25vh;
+    height: 25vh;
     overflow-wrap: break-word;
     padding: 2px;
     margin: .5vw;
   }
 
   #headerblock {
-    border: solid;
-    width: 15vw;
-    height: 20vh;
-    border-color: red;
+    width: 25vh;
+    height: 25vh;
     overflow-wrap: break-word;
     margin: .5vw;
     padding: 2px;
   }
 
   #footerblock {
-    border: solid;
-    width: 15vw;
-    height: 20vh;
-    border-color: red;
+    width: 25vh;
+    height: 25vh;
     overflow-wrap: break-word;
     margin: .5vw;
     padding: 2px;
   }
 
   #artimage {
-    width: 15vw;
-    height: 20vh;
+    width: 25vh;
+    height: 25vh;
     object-fit: cover;
   }
 
   #logoimage {
-    width: 9vh;
+    width: 12vh;
+    padding-right: 20px;
+    padding-top: 0.8vh;
   }
 
   #sidebarimage {
     padding-top: 20px;
-    width: 20vw;
-    height: 40vh;
+    width: 24vw;
     object-fit: cover;
   }
 
   #lightbutton {
+    padding-top: 1.8vh;
     margin-right: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    color: blue;
   }
 
   #artbutton {
     margin-right: 10px;
+    padding-top: 1.8vh;
     padding-left: 5px;
     padding-right: 5px;
-    color: red;
   }
 
   #naturebutton {
     padding-left: 5px;
+    padding-top: 1.8vh;
     padding-right: 5px;
-    color: green;
+  }
+
+  #contact {
+    padding-left: 15vw;
+    padding-top: 1.8vh;
+    padding-right: 5px;
   }
 
   /*removing titel*/
