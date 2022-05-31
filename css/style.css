@@ -5,7 +5,7 @@
 }
 
 /* mobile version */
-@media only screen and (max-width : 1001px) {
+@media only screen and (max-width : 1000px) {
   #filterbarcontent {
     background-color: #87a4b6;
     display: flex;
@@ -20,13 +20,14 @@
     font-size: 1em;
   }
 
+
   #sidebar {}
 
   #sidebarcontent {
     display: flex;
     flex-direction: column;
     border-top: solid;
-    margin-top: 50vh;
+    margin-top: 45vh;
     height: 100vh;
     width: 100%;
     align-items: center;
@@ -35,7 +36,7 @@
     background-color: white;
     overflow-y: scroll;
     overflow-x: hidden;
-    visibility: visible;
+    visibility: hidden;
   }
 
   #sidebartitel {
@@ -64,8 +65,8 @@
     align-content: flex-end;
     justify-content: center;
     padding-top: 8vh;
-    background-color: #607582
-  }
+    background-color: #607582;
+    }
 
   #block1 {
     width: 40vw;
@@ -217,6 +218,7 @@
     padding-right: 5vh;
     padding-bottom: 2vh;
     background-color: #607582
+
   }
 
   #block1 {
