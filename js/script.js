@@ -1,11 +1,17 @@
+//desktop//
 document.getElementById( "logoimage" ).onclick= function(){
-let str = document.getElementById("sidebartekst").innerHTML;
-document.getElementById("sidebartekst").innerHTML =  "javascript test";
+let str = document.getElementById("sidebartitel").innerHTML;
+document.getElementById("sidebartitel").innerHTML =  "javascript test";
 };
 
 
+//mobile//
+document.getElementById("artimage").ontouchstart = function() {
+  element = document.querySelector('#sidebarcontent');
+  element.style.visibility = 'visible';
+};
 
-document.getElementById( "logoimage" ).ontouchstart = function(){
-let str = document.getElementById("sidebartekst").innerHTML;
-document.getElementById("sidebartekst").innerHTML =  "High Fidelity <br> 17.5 x 16 cm";
+document.getElementById("filterbarcontent").ontouchstart = function() {
+  element = document.querySelector('#sidebarcontent');
+  element.style.visibility = 'hidden';
 };
