@@ -11,13 +11,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20vw;
+    padding-left: 15vw;
     color: black;
     padding-top: 1vh;
     padding-bottom: 1vh;
     width: 100vw;
     position: fixed;
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   #sidebar {}
@@ -26,8 +26,7 @@
     display: flex;
     flex-direction: column;
     border-top: solid;
-    margin-top: 40vh;
-    padding: 5px;
+    margin-top: 50vh;
     height: 100vh;
     width: 100%;
     align-items: center;
@@ -41,14 +40,14 @@
 
   #sidebartitel {
     font-size: 2.5em;
-    padding-bottom: 2vh;
-    padding: 1vw;
-    padding-top: 1vh;
+    padding-top: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
 
   #sidebartekst {
-    font-size: 1.4em;
-    padding: 1vw;
+    font-size: 1.2em;
+    padding: 8vw;
     overflow-y: scroll;
   }
 
@@ -56,7 +55,7 @@
     font-size: 1.4em;
     padding: 1vw;
     overflow-y: scroll;
-    padding-left: 5vw;
+    padding-left: 7.5vw;
   }
 
   #maincontent {
@@ -99,7 +98,7 @@
   }
 
   #sidebarimage {
-      padding-top: 20px;
+    padding-top: 20px;
     width: 85vw;
     object-fit: cover;
   }
@@ -169,7 +168,7 @@
     /* moving title */
     position: fixed;
     background-color: #87a4b6;
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   #sidebarcontent {
@@ -263,7 +262,7 @@
   }
 
   #lightbutton {
-    padding-top: 1.8vh;
+    padding-top: 2.5vh;
     margin-right: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -271,20 +270,20 @@
 
   #artbutton {
     margin-right: 10px;
-    padding-top: 1.8vh;
+    padding-top: 2.5vh;
     padding-left: 5px;
     padding-right: 5px;
   }
 
   #naturebutton {
     padding-left: 5px;
-    padding-top: 1.8vh;
+    padding-top: 2.5vh;
     padding-right: 5px;
   }
 
   #contact {
-    padding-left: 15vw;
-    padding-top: 1.8vh;
+    padding-left: 23vw;
+    padding-top: 2.5vh;
     padding-right: 5px;
   }
 
