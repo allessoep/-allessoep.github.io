@@ -1,13 +1,20 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Times New Roman;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 /* mobile version */
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 1299px) {
+  * {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
   #filterbarcontent {
-    background-color: #87a4b6;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,9 +24,10 @@
     padding-bottom: 1vh;
     width: 100vw;
     position: fixed;
-    font-size: 1em;
+    font-size: 0.9em;
+    border-bottom: solid 2px;
+    border-right: solid 2px;
   }
-
 
   #sidebar {}
 
@@ -37,6 +45,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     visibility: hidden;
+    border-right: solid 2px;
   }
 
   #sidebartitel {
@@ -53,7 +62,7 @@
   }
 
   #sidebarimages {
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding: 1vw;
     overflow-y: scroll;
     padding-left: 7.5vw;
@@ -65,8 +74,8 @@
     align-content: flex-end;
     justify-content: center;
     padding-top: 8vh;
-    background-color: #607582;
-    }
+    background-color: white;
+  }
 
   #block1 {
     width: 40vw;
@@ -76,7 +85,7 @@
     padding: 2px;
   }
 
-  #headerblock {
+  .lightblock {
     width: 40vw;
     height: 20vh;
     overflow-wrap: break-word;
@@ -84,7 +93,7 @@
     padding: 2px;
   }
 
-  #footerblock {
+  .artblock {
     width: 40vw;
     height: 20vh;
     overflow-wrap: break-word;
@@ -92,26 +101,34 @@
     padding: 2px;
   }
 
-  #artimage {
+  .natureblock {
+    width: 40vw;
+    height: 20vh;
+    overflow-wrap: break-word;
+    margin: 2vw;
+    padding: 2px;
+  }
+
+  .artimage {
     width: 40vw;
     height: 20vh;
     object-fit: cover;
   }
 
-  #sidebarimage {
+  .sidebarimage {
     padding-top: 20px;
     width: 85vw;
     object-fit: cover;
   }
 
   #logoimage {
-    width: 5vh;
-    visibility: hidden;
+    width: 10vh;
+    padding-left: 5vh;
   }
 
   #lightbutton {
     margin-right: 10px;
-    padding-left: 5px;
+    padding-left: 20px;
     padding-right: 5px;
     font-size: 1.6em;
   }
@@ -125,8 +142,8 @@
 
   #naturebutton {
     padding-left: 5px;
-    padding-right: 5px;
     font-size: 1.6em;
+    padding-right: 2vh;
   }
 
   #contact {
@@ -139,7 +156,7 @@
 }
 
 /* desktop version */
-@media only screen and (min-width : 1001px) {
+@media only screen and (min-width : 1300px) {
   * {
     -ms-overflow-style: none;
     /* IE and Edge */
@@ -168,8 +185,9 @@
     padding-right: 20px;
     /* moving title */
     position: fixed;
-    background-color: #87a4b6;
+    background-color: white;
     font-size: 1.6em;
+    border-bottom: solid 2px;
   }
 
   #sidebarcontent {
@@ -179,12 +197,12 @@
     overflow-y: scroll;
     align-items: flex-start;
     color: black;
-    padding-left: 2vw;
     padding-left: 1vw;
     width: 27vw;
     height: 100vh;
     position: fixed;
-    background-color: #f9f9f9;
+    border-right: solid 2px;
+    background-color: white;
   }
 
   #benenbeelden {
@@ -192,10 +210,10 @@
   }
 
   #sidebartitel {
-    font-size: 3em;
+    font-size: 3.5em;
     padding-bottom: 2vh;
     padding: 1vw;
-    padding-top: 2vh;
+    padding-top: 1.5vh;
   }
 
   #sidebartekst {
@@ -217,8 +235,7 @@
     padding-left: 50vh;
     padding-right: 5vh;
     padding-bottom: 2vh;
-    background-color: #607582
-
+    background-color: white;
   }
 
   #block1 {
@@ -229,25 +246,39 @@
     margin: .5vw;
   }
 
-  #headerblock {
+  .lightblock {
     width: 25vh;
     height: 25vh;
     overflow-wrap: break-word;
-    margin: .5vw;
     padding: 2px;
+    margin: .5vw;
   }
 
-  #footerblock {
+  .artblock {
     width: 25vh;
     height: 25vh;
     overflow-wrap: break-word;
-    margin: .5vw;
     padding: 2px;
+    margin: .5vw;
   }
 
-  #artimage {
+  .natureblock {
     width: 25vh;
     height: 25vh;
+    overflow-wrap: break-word;
+    padding: 2px;
+    margin: .5vw;
+  }
+
+  .artimage {
+    width: 25vh;
+    height: 25vh;
+    object-fit: cover;
+  }
+
+  .sidebarimage {
+    padding-top: 20px;
+    width: 24vw;
     object-fit: cover;
   }
 
@@ -255,12 +286,6 @@
     width: 12vh;
     padding-right: 20px;
     padding-top: 0.8vh;
-  }
-
-  #sidebarimage {
-    padding-top: 20px;
-    width: 24vw;
-    object-fit: cover;
   }
 
   #lightbutton {
@@ -280,11 +305,10 @@
   #naturebutton {
     padding-left: 5px;
     padding-top: 2.5vh;
-    padding-right: 5px;
   }
 
   #contact {
-    padding-left: 23vw;
+    padding-left: 47vh;
     padding-top: 2.5vh;
     padding-right: 5px;
   }
